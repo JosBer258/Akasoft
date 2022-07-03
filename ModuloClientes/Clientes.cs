@@ -61,6 +61,22 @@ namespace ModuloClientes
 
         }
 
+        public void CargarClientes(ComboBox comboBoxClientes)
+        {
+            cnx.Open();
+            sql = string.Format(@"SELECT * FROM CLIENTES");
+            cmd = new SqlCommand(sql, cnx);
+            DataAdapter = new SqlDataAdapter(cmd);
+            dt = new DataTable();
+            DataAdapter.Fill(dt);
+            cnx.Close();
+
+            comboBoxClientes.ValueMember = "ID_CLIENTE";
+            comboBoxClientes.DisplayMember = "NOMBRE";
+            comboBoxClientes.DataSource = dt;
+        }
+
+
 
     }
 }
