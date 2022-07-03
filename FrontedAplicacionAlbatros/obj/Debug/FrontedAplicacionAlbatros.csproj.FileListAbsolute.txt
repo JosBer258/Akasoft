@@ -1,0 +1,13 @@
+C:\Users\dell\source\repos\FrontedAplicacionAlbatros\FrontedAplicacionAlbatros\obj\Debug\FrontedAplicacionAlbatros.csproj.AssemblyReference.cache
+C:\Users\dell\source\repos\FrontedAplicacionAlbatros\FrontedAplicacionAlbatros\obj\Debug\FrontedAplicacionAlbatros.csproj.SuggestedBindingRedirects.cache
+C:\Users\dell\source\repos\FrontedAplicacionAlbatros\FrontedAplicacionAlbatros\obj\Debug\FrontedAplicacionAlbatros.General.MenuIngreso.resources
+C:\Users\dell\source\repos\FrontedAplicacionAlbatros\FrontedAplicacionAlbatros\obj\Debug\FrontedAplicacionAlbatros.Properties.Resources.resources
+C:\Users\dell\source\repos\FrontedAplicacionAlbatros\FrontedAplicacionAlbatros\obj\Debug\FrontedAplicacionAlbatros.csproj.GenerateResource.cache
+C:\Users\dell\source\repos\FrontedAplicacionAlbatros\FrontedAplicacionAlbatros\obj\Debug\FrontedAplicacionAlbatros.csproj.CoreCompileInputs.cache
+C:\Users\dell\source\repos\FrontedAplicacionAlbatros\FrontedAplicacionAlbatros\bin\Debug\FrontedAplicacionAlbatros.exe.config
+C:\Users\dell\source\repos\FrontedAplicacionAlbatros\FrontedAplicacionAlbatros\bin\Debug\FrontedAplicacionAlbatros.exe
+C:\Users\dell\source\repos\FrontedAplicacionAlbatros\FrontedAplicacionAlbatros\bin\Debug\FrontedAplicacionAlbatros.pdb
+C:\Users\dell\source\repos\FrontedAplicacionAlbatros\FrontedAplicacionAlbatros\obj\Debug\FrontedAplicacionAlbatros.exe
+C:\Users\dell\source\repos\FrontedAplicacionAlbatros\FrontedAplicacionAlbatros\obj\Debug\FrontedAplicacionAlbatros.pdb
+C:\Users\dell\source\repos\FrontedAplicacionAlbatros\FrontedAplicacionAlbatros\obj\Debug\FrontedAplicacionAlbatros.Modulo_Cliente.ClientesGeneral.resources
+C:\Users\dell\source\repos\FrontedAplicacionAlbatros\FrontedAplicacionAlbatros\obj\Debug\FrontedAplicacionAlbatros.Modulo_Cliente.ModificacionClientes.resources
