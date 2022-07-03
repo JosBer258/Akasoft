@@ -1,0 +1,6 @@
+C:\Users\rob20\Source\Repos\Akasoft\ModuloFacturas\bin\Debug\ModuloFacturas.dll
+C:\Users\rob20\Source\Repos\Akasoft\ModuloFacturas\bin\Debug\ModuloFacturas.pdb
+C:\Users\rob20\Source\Repos\Akasoft\ModuloFacturas\obj\Debug\ModuloFacturas.csproj.AssemblyReference.cache
+C:\Users\rob20\Source\Repos\Akasoft\ModuloFacturas\obj\Debug\ModuloFacturas.csproj.CoreCompileInputs.cache
+C:\Users\rob20\Source\Repos\Akasoft\ModuloFacturas\obj\Debug\ModuloFacturas.dll
+C:\Users\rob20\Source\Repos\Akasoft\ModuloFacturas\obj\Debug\ModuloFacturas.pdb
