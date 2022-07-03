@@ -96,6 +96,8 @@
             this.dataGridClientesListado.ReadOnly = true;
             this.dataGridClientesListado.Size = new System.Drawing.Size(776, 349);
             this.dataGridClientesListado.TabIndex = 0;
+            this.dataGridClientesListado.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridClientesListado_CellContentDoubleClick);
+            this.dataGridClientesListado.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridClientesListado_CellDoubleClick);
             // 
             // tabCreacion
             // 

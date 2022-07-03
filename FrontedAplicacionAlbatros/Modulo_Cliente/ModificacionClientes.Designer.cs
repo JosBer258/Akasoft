@@ -32,8 +32,8 @@
             this.buttonGuardarClientes = new System.Windows.Forms.Button();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textNombre = new System.Windows.Forms.TextBox();
+            this.textIDCLiente = new System.Windows.Forms.TextBox();
             this.lableIdCliente = new System.Windows.Forms.Label();
             this.labelDireccion = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -79,22 +79,22 @@
             this.textBox3.Size = new System.Drawing.Size(215, 22);
             this.textBox3.TabIndex = 17;
             // 
-            // textBox2
+            // textNombre
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(169, 49);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(215, 22);
-            this.textBox2.TabIndex = 16;
+            this.textNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textNombre.Location = new System.Drawing.Point(169, 49);
+            this.textNombre.Name = "textNombre";
+            this.textNombre.Size = new System.Drawing.Size(215, 22);
+            this.textNombre.TabIndex = 16;
             // 
-            // textBox1
+            // textIDCLiente
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(169, 15);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(215, 22);
-            this.textBox1.TabIndex = 15;
+            this.textIDCLiente.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textIDCLiente.Location = new System.Drawing.Point(169, 15);
+            this.textIDCLiente.Name = "textIDCLiente";
+            this.textIDCLiente.ReadOnly = true;
+            this.textIDCLiente.Size = new System.Drawing.Size(215, 22);
+            this.textIDCLiente.TabIndex = 15;
             // 
             // lableIdCliente
             // 
@@ -185,14 +185,15 @@
             this.Controls.Add(this.buttonGuardarClientes);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textNombre);
+            this.Controls.Add(this.textIDCLiente);
             this.Controls.Add(this.lableIdCliente);
             this.Controls.Add(this.labelDireccion);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.labelRTN);
             this.Name = "ModificacionClientes";
             this.Text = "Modificacion de Clientes";
+            this.Load += new System.EventHandler(this.ModificacionClientes_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -204,8 +205,8 @@
         private System.Windows.Forms.Button buttonGuardarClientes;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textNombre;
+        private System.Windows.Forms.TextBox textIDCLiente;
         private System.Windows.Forms.Label lableIdCliente;
         private System.Windows.Forms.Label labelDireccion;
         private System.Windows.Forms.Label label3;

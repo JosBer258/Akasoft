@@ -29,5 +29,27 @@ namespace FrontedAplicacionAlbatros.Modulo_Cliente
             Clientes clientes = new Clientes();
             clientes.CargarDataGriewClientes(dataGridClientesListado);
         }
+
+        private void dataGridClientesListado_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            ModificacionClientes modClientes = new ModificacionClientes();
+
+            DataGridViewRow dataGridViewRow = dataGridClientesListado.Rows[e.RowIndex];
+            modClientes.idCliente = Convert.ToString(dataGridViewRow.Cells["ID_CLIENTE"].Value.ToString());
+            modClientes.nombreCliente = Convert.ToString(dataGridViewRow.Cells["NOMBRE"].Value.ToString());
+            modClientes.ShowDialog();
+        }
+
+        
+
+        private void dataGridClientesListado_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            ModificacionClientes modClientes = new ModificacionClientes();
+
+            DataGridViewRow dataGridViewRow = dataGridClientesListado.Rows[e.RowIndex];
+            modClientes.idCliente = Convert.ToString(dataGridViewRow.Cells["ID_CLIENTE"].Value.ToString());
+            modClientes.nombreCliente = Convert.ToString(dataGridViewRow.Cells["NOMBRE"].Value.ToString());
+            modClientes.ShowDialog();
+        }
     }
 }

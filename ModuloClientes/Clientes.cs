@@ -42,7 +42,7 @@ namespace ModuloClientes
         public DateTime FechaModificacion { get { return fechaModificacion; } set { fechaModificacion = DateTime.Now;  } }
 
 
-        public void Fun_CargarDataGriewEstado3(DataGridView dvg)
+        public void CargarDataGriewClientes(DataGridView dvg)
         {
             cnx.Open();
             try
@@ -53,9 +53,9 @@ namespace ModuloClientes
                 dvg.DataSource = dt;
 
             }
-            catch
+            catch(Exception e)
             {
-
+                MessageBox.Show(e.ToString());
             }
             cnx.Close();
 

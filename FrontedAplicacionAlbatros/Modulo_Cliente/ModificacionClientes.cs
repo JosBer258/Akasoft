@@ -12,9 +12,18 @@ namespace FrontedAplicacionAlbatros.Modulo_Cliente
 {
     public partial class ModificacionClientes : Form
     {
+        public string idCliente;
+        public string nombreCliente;
+
         public ModificacionClientes()
         {
             InitializeComponent();
+        }
+
+        private void ModificacionClientes_Load(object sender, EventArgs e)
+        {
+            textIDCLiente.Text = idCliente;
+            textNombre.Text = nombreCliente;
         }
     }
 }
