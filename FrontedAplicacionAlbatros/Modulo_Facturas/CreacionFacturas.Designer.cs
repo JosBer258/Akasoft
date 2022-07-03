@@ -40,6 +40,12 @@
             this.labelImpuesto = new System.Windows.Forms.Label();
             this.groupDetalles = new System.Windows.Forms.GroupBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.buttonCancelar = new System.Windows.Forms.Button();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.buttonGuardarClientes = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
@@ -49,12 +55,9 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.dataGridItemsListado = new System.Windows.Forms.DataGridView();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.buttonCancelar = new System.Windows.Forms.Button();
-            this.buttonGuardarClientes = new System.Windows.Forms.Button();
+            this.buttonCrearNuevaFactura = new System.Windows.Forms.Button();
+            this.textIdFacturas = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.groupDatosGenerales.SuspendLayout();
             this.groupResumen.SuspendLayout();
             this.groupDetalles.SuspendLayout();
@@ -64,13 +67,15 @@
             // 
             // groupDatosGenerales
             // 
+            this.groupDatosGenerales.Controls.Add(this.textIdFacturas);
+            this.groupDatosGenerales.Controls.Add(this.label8);
             this.groupDatosGenerales.Controls.Add(this.comboBox1);
             this.groupDatosGenerales.Controls.Add(this.dateTimePicker1);
             this.groupDatosGenerales.Controls.Add(this.label1);
             this.groupDatosGenerales.Controls.Add(this.labelIDCliente);
             this.groupDatosGenerales.Location = new System.Drawing.Point(22, 12);
             this.groupDatosGenerales.Name = "groupDatosGenerales";
-            this.groupDatosGenerales.Size = new System.Drawing.Size(362, 100);
+            this.groupDatosGenerales.Size = new System.Drawing.Size(545, 100);
             this.groupDatosGenerales.TabIndex = 0;
             this.groupDatosGenerales.TabStop = false;
             this.groupDatosGenerales.Text = "Header";
@@ -79,14 +84,14 @@
             // 
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(147, 23);
+            this.comboBox1.Location = new System.Drawing.Point(327, 26);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(200, 21);
             this.comboBox1.TabIndex = 12;
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(147, 57);
+            this.dateTimePicker1.Location = new System.Drawing.Point(327, 60);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
             this.dateTimePicker1.TabIndex = 11;
@@ -94,7 +99,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 57);
+            this.label1.Location = new System.Drawing.Point(192, 60);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(82, 13);
             this.label1.TabIndex = 10;
@@ -103,7 +108,7 @@
             // labelIDCliente
             // 
             this.labelIDCliente.AutoSize = true;
-            this.labelIDCliente.Location = new System.Drawing.Point(12, 31);
+            this.labelIDCliente.Location = new System.Drawing.Point(192, 34);
             this.labelIDCliente.Name = "labelIDCliente";
             this.labelIDCliente.Size = new System.Drawing.Size(109, 13);
             this.labelIDCliente.TabIndex = 8;
@@ -115,7 +120,7 @@
             this.groupResumen.Controls.Add(this.labelTotalFactura);
             this.groupResumen.Controls.Add(this.textImpuesto);
             this.groupResumen.Controls.Add(this.labelImpuesto);
-            this.groupResumen.Location = new System.Drawing.Point(401, 12);
+            this.groupResumen.Location = new System.Drawing.Point(584, 12);
             this.groupResumen.Name = "groupResumen";
             this.groupResumen.Size = new System.Drawing.Size(271, 100);
             this.groupResumen.TabIndex = 1;
@@ -192,6 +197,59 @@
             this.groupBox1.TabIndex = 16;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Resumen";
+            // 
+            // buttonCancelar
+            // 
+            this.buttonCancelar.Location = new System.Drawing.Point(547, 67);
+            this.buttonCancelar.Name = "buttonCancelar";
+            this.buttonCancelar.Size = new System.Drawing.Size(157, 33);
+            this.buttonCancelar.TabIndex = 22;
+            this.buttonCancelar.Text = "Cancelar";
+            this.buttonCancelar.UseVisualStyleBackColor = true;
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(123, 25);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(341, 21);
+            this.comboBox2.TabIndex = 13;
+            // 
+            // buttonGuardarClientes
+            // 
+            this.buttonGuardarClientes.Location = new System.Drawing.Point(547, 25);
+            this.buttonGuardarClientes.Name = "buttonGuardarClientes";
+            this.buttonGuardarClientes.Size = new System.Drawing.Size(157, 33);
+            this.buttonGuardarClientes.TabIndex = 21;
+            this.buttonGuardarClientes.Text = "Guardar Datos";
+            this.buttonGuardarClientes.UseVisualStyleBackColor = true;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(16, 28);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(101, 13);
+            this.label7.TabIndex = 22;
+            this.label7.Text = "Busqueda Producto";
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(339, 80);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.ReadOnly = true;
+            this.textBox5.Size = new System.Drawing.Size(125, 20);
+            this.textBox5.TabIndex = 21;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(259, 83);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(77, 13);
+            this.label6.TabIndex = 20;
+            this.label6.Text = "Impuesto Total";
             // 
             // textBox3
             // 
@@ -276,58 +334,30 @@
             this.dataGridItemsListado.Size = new System.Drawing.Size(983, 248);
             this.dataGridItemsListado.TabIndex = 1;
             // 
-            // textBox5
+            // buttonCrearNuevaFactura
             // 
-            this.textBox5.Location = new System.Drawing.Point(339, 80);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.ReadOnly = true;
-            this.textBox5.Size = new System.Drawing.Size(125, 20);
-            this.textBox5.TabIndex = 21;
+            this.buttonCrearNuevaFactura.Location = new System.Drawing.Point(863, 23);
+            this.buttonCrearNuevaFactura.Name = "buttonCrearNuevaFactura";
+            this.buttonCrearNuevaFactura.Size = new System.Drawing.Size(157, 33);
+            this.buttonCrearNuevaFactura.TabIndex = 23;
+            this.buttonCrearNuevaFactura.Text = "Crear Nueva Factura";
+            this.buttonCrearNuevaFactura.UseVisualStyleBackColor = true;
             // 
-            // label6
+            // textIdFacturas
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(259, 83);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(77, 13);
-            this.label6.TabIndex = 20;
-            this.label6.Text = "Impuesto Total";
+            this.textIdFacturas.Location = new System.Drawing.Point(25, 54);
+            this.textIdFacturas.Name = "textIdFacturas";
+            this.textIdFacturas.Size = new System.Drawing.Size(125, 20);
+            this.textIdFacturas.TabIndex = 17;
             // 
-            // label7
+            // label8
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(16, 28);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(101, 13);
-            this.label7.TabIndex = 22;
-            this.label7.Text = "Busqueda Producto";
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(123, 25);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(341, 21);
-            this.comboBox2.TabIndex = 13;
-            // 
-            // buttonCancelar
-            // 
-            this.buttonCancelar.Location = new System.Drawing.Point(547, 67);
-            this.buttonCancelar.Name = "buttonCancelar";
-            this.buttonCancelar.Size = new System.Drawing.Size(157, 33);
-            this.buttonCancelar.TabIndex = 22;
-            this.buttonCancelar.Text = "Cancelar";
-            this.buttonCancelar.UseVisualStyleBackColor = true;
-            // 
-            // buttonGuardarClientes
-            // 
-            this.buttonGuardarClientes.Location = new System.Drawing.Point(547, 25);
-            this.buttonGuardarClientes.Name = "buttonGuardarClientes";
-            this.buttonGuardarClientes.Size = new System.Drawing.Size(157, 33);
-            this.buttonGuardarClientes.TabIndex = 21;
-            this.buttonGuardarClientes.Text = "Guardar Datos";
-            this.buttonGuardarClientes.UseVisualStyleBackColor = true;
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(22, 31);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(57, 13);
+            this.label8.TabIndex = 16;
+            this.label8.Text = "ID Factura";
             // 
             // CreacionFacturas
             // 
@@ -335,12 +365,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(1068, 581);
+            this.Controls.Add(this.buttonCrearNuevaFactura);
             this.Controls.Add(this.groupDetalles);
             this.Controls.Add(this.groupResumen);
             this.Controls.Add(this.groupDatosGenerales);
             this.Name = "CreacionFacturas";
             this.Text = "Creacion de Facturas";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.CreacionFacturas_Load);
             this.groupDatosGenerales.ResumeLayout(false);
             this.groupDatosGenerales.PerformLayout();
             this.groupResumen.ResumeLayout(false);
@@ -382,5 +414,8 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button buttonCancelar;
         private System.Windows.Forms.Button buttonGuardarClientes;
+        private System.Windows.Forms.Button buttonCrearNuevaFactura;
+        private System.Windows.Forms.TextBox textIdFacturas;
+        private System.Windows.Forms.Label label8;
     }
 }

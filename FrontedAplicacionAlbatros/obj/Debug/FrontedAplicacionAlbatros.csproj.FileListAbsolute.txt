@@ -35,3 +35,7 @@ C:\Users\dell\Videos\Arkasoft\Akasoft\FrontedAplicacionAlbatros\bin\Debug\Modulo
 C:\Users\dell\Videos\Arkasoft\Akasoft\FrontedAplicacionAlbatros\bin\Debug\ConexionDB.pdb
 C:\Users\dell\Videos\Arkasoft\Akasoft\FrontedAplicacionAlbatros\bin\Debug\ModuloClientes.pdb
 C:\Users\dell\Videos\Arkasoft\Akasoft\FrontedAplicacionAlbatros\obj\Debug\FrontedAplicacionAlbatros.csproj.CopyComplete
+C:\Users\dell\Videos\Arkasoft\Akasoft\FrontedAplicacionAlbatros\bin\Debug\ModuloFacturacion.dll
+C:\Users\dell\Videos\Arkasoft\Akasoft\FrontedAplicacionAlbatros\bin\Debug\ModuloProductos.dll
+C:\Users\dell\Videos\Arkasoft\Akasoft\FrontedAplicacionAlbatros\bin\Debug\ModuloFacturacion.pdb
+C:\Users\dell\Videos\Arkasoft\Akasoft\FrontedAplicacionAlbatros\bin\Debug\ModuloProductos.pdb

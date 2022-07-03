@@ -1,0 +1,9 @@
+C:\Users\dell\Videos\Arkasoft\Akasoft\ModuloClientes\bin\Debug\ModuloClientes.dll
+C:\Users\dell\Videos\Arkasoft\Akasoft\ModuloClientes\bin\Debug\ModuloClientes.pdb
+C:\Users\dell\Videos\Arkasoft\Akasoft\ModuloClientes\bin\Debug\ConexionDB.dll
+C:\Users\dell\Videos\Arkasoft\Akasoft\ModuloClientes\bin\Debug\ConexionDB.pdb
+C:\Users\dell\Videos\Arkasoft\Akasoft\ModuloClientes\obj\Debug\ModuloClientes.csproj.AssemblyReference.cache
+C:\Users\dell\Videos\Arkasoft\Akasoft\ModuloClientes\obj\Debug\ModuloClientes.csproj.CoreCompileInputs.cache
+C:\Users\dell\Videos\Arkasoft\Akasoft\ModuloClientes\obj\Debug\ModuloClientes.csproj.CopyComplete
+C:\Users\dell\Videos\Arkasoft\Akasoft\ModuloClientes\obj\Debug\ModuloClientes.dll
+C:\Users\dell\Videos\Arkasoft\Akasoft\ModuloClientes\obj\Debug\ModuloClientes.pdb
