@@ -30,11 +30,13 @@ namespace ConexionDB
 
             try
             {
-                this.cnx = new SqlConnection(@"Data Source=DESKTOP-4UE71IO\SQLEXPRESS;Initial Catalog=ALBATROS; integrated security=true;");
-            }
-            catch (Exception)
-            {
 
+                this.ccnx = @"Data Source=DESKTOP-4UE71IO\SQLEXPRESS;Initial Catalog=ALBATROS;integrated security=true;";
+                this.cnx = new SqlConnection(this.ccnx);
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.ToString());
             }
         }
 

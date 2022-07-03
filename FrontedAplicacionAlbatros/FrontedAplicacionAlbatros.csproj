@@ -151,6 +151,15 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\ConexionDB\ConexionDB.csproj">
+      <Project>{c7ed3f1c-a239-4f1d-9536-4c4d20edb8cb}</Project>
+      <Name>ConexionDB</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ModuloClientes\ModuloClientes.csproj">
+      <Project>{33c7e96d-c031-4d76-91c4-5246e1f166c1}</Project>
+      <Name>ModuloClientes</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

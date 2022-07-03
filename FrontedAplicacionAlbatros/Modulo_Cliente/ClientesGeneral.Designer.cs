@@ -30,23 +30,23 @@
         {
             this.tabControlClientes = new System.Windows.Forms.TabControl();
             this.tabBusqueda = new System.Windows.Forms.TabPage();
-            this.tabCreacion = new System.Windows.Forms.TabPage();
-            this.dataGridClientesListado = new System.Windows.Forms.DataGridView();
-            this.labelRTN = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.labelDireccion = new System.Windows.Forms.Label();
-            this.lableIdCliente = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.buttonGuardarClientes = new System.Windows.Forms.Button();
-            this.buttonCancelar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.dataGridClientesListado = new System.Windows.Forms.DataGridView();
+            this.tabCreacion = new System.Windows.Forms.TabPage();
+            this.buttonCancelar = new System.Windows.Forms.Button();
+            this.buttonGuardarClientes = new System.Windows.Forms.Button();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.lableIdCliente = new System.Windows.Forms.Label();
+            this.labelDireccion = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.labelRTN = new System.Windows.Forms.Label();
             this.tabControlClientes.SuspendLayout();
             this.tabBusqueda.SuspendLayout();
-            this.tabCreacion.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridClientesListado)).BeginInit();
+            this.tabCreacion.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControlClientes
@@ -72,6 +72,31 @@
             this.tabBusqueda.Text = "Busqueda de Clientes";
             this.tabBusqueda.UseVisualStyleBackColor = true;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.label1.Location = new System.Drawing.Point(462, 19);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(322, 13);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "*Doble Click en datos del Cliente para observar detalles / Modificar";
+            // 
+            // dataGridClientesListado
+            // 
+            this.dataGridClientesListado.AllowUserToAddRows = false;
+            this.dataGridClientesListado.AllowUserToDeleteRows = false;
+            this.dataGridClientesListado.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridClientesListado.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridClientesListado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridClientesListado.Location = new System.Drawing.Point(8, 49);
+            this.dataGridClientesListado.Name = "dataGridClientesListado";
+            this.dataGridClientesListado.ReadOnly = true;
+            this.dataGridClientesListado.Size = new System.Drawing.Size(776, 349);
+            this.dataGridClientesListado.TabIndex = 0;
+            // 
             // tabCreacion
             // 
             this.tabCreacion.BackColor = System.Drawing.Color.WhiteSmoke;
@@ -92,50 +117,56 @@
             this.tabCreacion.TabIndex = 1;
             this.tabCreacion.Text = "Creacion de Clientes";
             // 
-            // dataGridClientesListado
+            // buttonCancelar
             // 
-            this.dataGridClientesListado.AllowUserToAddRows = false;
-            this.dataGridClientesListado.AllowUserToDeleteRows = false;
-            this.dataGridClientesListado.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridClientesListado.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridClientesListado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridClientesListado.Location = new System.Drawing.Point(8, 49);
-            this.dataGridClientesListado.Name = "dataGridClientesListado";
-            this.dataGridClientesListado.ReadOnly = true;
-            this.dataGridClientesListado.Size = new System.Drawing.Size(776, 349);
-            this.dataGridClientesListado.TabIndex = 0;
+            this.buttonCancelar.Location = new System.Drawing.Point(173, 341);
+            this.buttonCancelar.Name = "buttonCancelar";
+            this.buttonCancelar.Size = new System.Drawing.Size(215, 47);
+            this.buttonCancelar.TabIndex = 10;
+            this.buttonCancelar.Text = "Cancelar";
+            this.buttonCancelar.UseVisualStyleBackColor = true;
             // 
-            // labelRTN
+            // buttonGuardarClientes
             // 
-            this.labelRTN.AutoSize = true;
-            this.labelRTN.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelRTN.Location = new System.Drawing.Point(23, 96);
-            this.labelRTN.Name = "labelRTN";
-            this.labelRTN.Size = new System.Drawing.Size(36, 16);
-            this.labelRTN.TabIndex = 1;
-            this.labelRTN.Text = "RTN";
+            this.buttonGuardarClientes.Location = new System.Drawing.Point(173, 288);
+            this.buttonGuardarClientes.Name = "buttonGuardarClientes";
+            this.buttonGuardarClientes.Size = new System.Drawing.Size(215, 47);
+            this.buttonGuardarClientes.TabIndex = 9;
+            this.buttonGuardarClientes.Text = "Guardar Datos";
+            this.buttonGuardarClientes.UseVisualStyleBackColor = true;
             // 
-            // label3
+            // textBox4
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(23, 64);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(100, 16);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Nombre Cliente";
+            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox4.Location = new System.Drawing.Point(173, 126);
+            this.textBox4.Multiline = true;
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(215, 156);
+            this.textBox4.TabIndex = 8;
             // 
-            // labelDireccion
+            // textBox3
             // 
-            this.labelDireccion.AutoSize = true;
-            this.labelDireccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelDireccion.Location = new System.Drawing.Point(23, 126);
-            this.labelDireccion.Name = "labelDireccion";
-            this.labelDireccion.Size = new System.Drawing.Size(64, 16);
-            this.labelDireccion.TabIndex = 3;
-            this.labelDireccion.Text = "Direccion";
+            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox3.Location = new System.Drawing.Point(173, 95);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(215, 22);
+            this.textBox3.TabIndex = 7;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Location = new System.Drawing.Point(173, 61);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(215, 22);
+            this.textBox2.TabIndex = 6;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(173, 27);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(215, 22);
+            this.textBox1.TabIndex = 5;
             // 
             // lableIdCliente
             // 
@@ -147,66 +178,35 @@
             this.lableIdCliente.TabIndex = 4;
             this.lableIdCliente.Text = "ID Cliente";
             // 
-            // textBox1
+            // labelDireccion
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(173, 27);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(215, 22);
-            this.textBox1.TabIndex = 5;
+            this.labelDireccion.AutoSize = true;
+            this.labelDireccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelDireccion.Location = new System.Drawing.Point(23, 126);
+            this.labelDireccion.Name = "labelDireccion";
+            this.labelDireccion.Size = new System.Drawing.Size(64, 16);
+            this.labelDireccion.TabIndex = 3;
+            this.labelDireccion.Text = "Direccion";
             // 
-            // textBox2
+            // label3
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(173, 61);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(215, 22);
-            this.textBox2.TabIndex = 6;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(23, 64);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(100, 16);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Nombre Cliente";
             // 
-            // textBox3
+            // labelRTN
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(173, 95);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(215, 22);
-            this.textBox3.TabIndex = 7;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(173, 126);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(215, 156);
-            this.textBox4.TabIndex = 8;
-            // 
-            // buttonGuardarClientes
-            // 
-            this.buttonGuardarClientes.Location = new System.Drawing.Point(173, 288);
-            this.buttonGuardarClientes.Name = "buttonGuardarClientes";
-            this.buttonGuardarClientes.Size = new System.Drawing.Size(215, 47);
-            this.buttonGuardarClientes.TabIndex = 9;
-            this.buttonGuardarClientes.Text = "Guardar Datos";
-            this.buttonGuardarClientes.UseVisualStyleBackColor = true;
-            // 
-            // buttonCancelar
-            // 
-            this.buttonCancelar.Location = new System.Drawing.Point(173, 341);
-            this.buttonCancelar.Name = "buttonCancelar";
-            this.buttonCancelar.Size = new System.Drawing.Size(215, 47);
-            this.buttonCancelar.TabIndex = 10;
-            this.buttonCancelar.Text = "Cancelar";
-            this.buttonCancelar.UseVisualStyleBackColor = true;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.label1.Location = new System.Drawing.Point(462, 19);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(322, 13);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "*Doble Click en datos del Cliente para observar detalles / Modificar";
+            this.labelRTN.AutoSize = true;
+            this.labelRTN.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelRTN.Location = new System.Drawing.Point(23, 96);
+            this.labelRTN.Name = "labelRTN";
+            this.labelRTN.Size = new System.Drawing.Size(36, 16);
+            this.labelRTN.TabIndex = 1;
+            this.labelRTN.Text = "RTN";
             // 
             // ClientesGeneral
             // 
@@ -216,12 +216,13 @@
             this.Controls.Add(this.tabControlClientes);
             this.Name = "ClientesGeneral";
             this.Text = "Gestion de Clientes";
+            this.Load += new System.EventHandler(this.ClientesGeneral_Load);
             this.tabControlClientes.ResumeLayout(false);
             this.tabBusqueda.ResumeLayout(false);
             this.tabBusqueda.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridClientesListado)).EndInit();
             this.tabCreacion.ResumeLayout(false);
             this.tabCreacion.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridClientesListado)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ModuloClientes;
 
 namespace FrontedAplicacionAlbatros.Modulo_Cliente
 {
@@ -21,6 +22,12 @@ namespace FrontedAplicacionAlbatros.Modulo_Cliente
         {
             ModificacionClientes modificacionClientes = new ModificacionClientes();
             modificacionClientes.ShowDialog();
+        }
+
+        private void ClientesGeneral_Load(object sender, EventArgs e)
+        {
+            Clientes clientes = new Clientes();
+            clientes.CargarDataGriewClientes(dataGridClientesListado);
         }
     }
 }
