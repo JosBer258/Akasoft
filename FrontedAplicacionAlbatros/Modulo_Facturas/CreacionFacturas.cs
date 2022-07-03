@@ -16,5 +16,6 @@ namespace FrontedAplicacionAlbatros.Modulo_Facturas
         {
             InitializeComponent();
         }
+
     }
 }

@@ -31,7 +31,6 @@
             this.labelIDFactura = new System.Windows.Forms.Label();
             this.dataGridClientesListado = new System.Windows.Forms.DataGridView();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textIDCliente = new System.Windows.Forms.TextBox();
             this.labelIDCliente = new System.Windows.Forms.Label();
             this.textTotalFactura = new System.Windows.Forms.TextBox();
             this.labelTotalFactura = new System.Windows.Forms.Label();
@@ -39,9 +38,10 @@
             this.labelImpuesto = new System.Windows.Forms.Label();
             this.textFechaAnulacion = new System.Windows.Forms.TextBox();
             this.labelFechaAnulacion = new System.Windows.Forms.Label();
-            this.textFechaCreacion = new System.Windows.Forms.TextBox();
             this.labelFechaCreacion = new System.Windows.Forms.Label();
             this.buttonCancelar = new System.Windows.Forms.Button();
+            this.textIDCliente = new System.Windows.Forms.TextBox();
+            this.textFechaCreacion = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridClientesListado)).BeginInit();
             this.SuspendLayout();
             // 
@@ -76,14 +76,6 @@
             this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(192, 20);
             this.textBox1.TabIndex = 5;
-            // 
-            // textIDCliente
-            // 
-            this.textIDCliente.Location = new System.Drawing.Point(132, 48);
-            this.textIDCliente.Name = "textIDCliente";
-            this.textIDCliente.ReadOnly = true;
-            this.textIDCliente.Size = new System.Drawing.Size(192, 20);
-            this.textIDCliente.TabIndex = 7;
             // 
             // labelIDCliente
             // 
@@ -145,14 +137,6 @@
             this.labelFechaAnulacion.TabIndex = 14;
             this.labelFechaAnulacion.Text = "Fecha Anulacion ";
             // 
-            // textFechaCreacion
-            // 
-            this.textFechaCreacion.Location = new System.Drawing.Point(132, 126);
-            this.textFechaCreacion.Name = "textFechaCreacion";
-            this.textFechaCreacion.ReadOnly = true;
-            this.textFechaCreacion.Size = new System.Drawing.Size(192, 20);
-            this.textFechaCreacion.TabIndex = 13;
-            // 
             // labelFechaCreacion
             // 
             this.labelFechaCreacion.AutoSize = true;
@@ -171,6 +155,22 @@
             this.buttonCancelar.Text = "Salir";
             this.buttonCancelar.UseVisualStyleBackColor = true;
             this.buttonCancelar.Click += new System.EventHandler(this.buttonCancelar_Click);
+            // 
+            // textIDCliente
+            // 
+            this.textIDCliente.Location = new System.Drawing.Point(132, 48);
+            this.textIDCliente.Name = "textIDCliente";
+            this.textIDCliente.ReadOnly = true;
+            this.textIDCliente.Size = new System.Drawing.Size(192, 20);
+            this.textIDCliente.TabIndex = 7;
+            // 
+            // textFechaCreacion
+            // 
+            this.textFechaCreacion.Location = new System.Drawing.Point(132, 126);
+            this.textFechaCreacion.Name = "textFechaCreacion";
+            this.textFechaCreacion.ReadOnly = true;
+            this.textFechaCreacion.Size = new System.Drawing.Size(192, 20);
+            this.textFechaCreacion.TabIndex = 13;
             // 
             // DetallesFacturas
             // 
@@ -204,7 +204,6 @@
         private System.Windows.Forms.Label labelIDFactura;
         private System.Windows.Forms.DataGridView dataGridClientesListado;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textIDCliente;
         private System.Windows.Forms.Label labelIDCliente;
         private System.Windows.Forms.TextBox textTotalFactura;
         private System.Windows.Forms.Label labelTotalFactura;
@@ -212,8 +211,9 @@
         private System.Windows.Forms.Label labelImpuesto;
         private System.Windows.Forms.TextBox textFechaAnulacion;
         private System.Windows.Forms.Label labelFechaAnulacion;
-        private System.Windows.Forms.TextBox textFechaCreacion;
         private System.Windows.Forms.Label labelFechaCreacion;
         private System.Windows.Forms.Button buttonCancelar;
+        private System.Windows.Forms.TextBox textIDCliente;
+        private System.Windows.Forms.TextBox textFechaCreacion;
     }
 }
