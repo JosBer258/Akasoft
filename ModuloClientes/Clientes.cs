@@ -21,7 +21,7 @@ namespace ModuloClientes
         private string rtnCliente;
         private string direccionCliente;
         private DateTime fechaCreacion;
-        private DateTime fechaModificacion;
+        private DateTime? fechaModificacion;
         
 
 
@@ -39,7 +39,7 @@ namespace ModuloClientes
 
         public DateTime FechaCreacion { get { return fechaCreacion; } set { fechaCreacion = DateTime.Now; } } 
 
-        public DateTime FechaModificacion { get { return fechaModificacion; } set { fechaModificacion = DateTime.Now;  } }
+        public DateTime? FechaModificacion { get { return fechaModificacion; } set { fechaModificacion = DateTime.Now;  } }
 
 
         public void CargarDataGriewClientes(DataGridView dvg)
@@ -47,7 +47,7 @@ namespace ModuloClientes
             cnx.Open();
             try
             {
-                DataAdapter = new SqlDataAdapter(@"SELECT * FROM CLIENTES", ccnx);
+                DataAdapter = new SqlDataAdapter(@"select * from [dbo].[CLIENTES]  where STATUS = 'A'", ccnx);
                 dt = new DataTable();
                 DataAdapter.Fill(dt);
                 dvg.DataSource = dt;
@@ -61,6 +61,33 @@ namespace ModuloClientes
 
         }
 
+        public void CargarClientes(ComboBox comboBoxClientes)
+        {
+            cnx.Open();
+            sql = string.Format(@"select * from [dbo].[CLIENTES]  where STATUS = 'A'");
+            cmd = new SqlCommand(sql, cnx);
+            DataAdapter = new SqlDataAdapter(cmd);
+            dt = new DataTable();
+            DataAdapter.Fill(dt);
+            cnx.Close();
 
+            comboBoxClientes.ValueMember = "ID_CLIENTE";
+            comboBoxClientes.DisplayMember = "NOMBRE";
+            comboBoxClientes.DataSource = dt;
+        }
+
+
+        public void IngresoClientes(Clientes clientes)
+        {
+            string Impuesto =
+            sql = string.Format(@""
+            );
+
+            cmd = new SqlCommand(sql, cnx);
+            cnx.Open();
+            SqlDataReader Reg = null;
+            Reg = this.cmd.ExecuteReader();
+            cnx.Close();
+        }
     }
 }
