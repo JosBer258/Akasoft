@@ -6,39 +6,48 @@ using System.Threading.Tasks;
 using System.Data.Sql;
 using System.Data.SqlClient;
 using System.Data;
+using System.Windows.Forms;
 
 
 namespace ConexionDB
 {
     public class Conexion
     {
+        public string ccnx;
         public string sql;
-        public SqlConnection cnn;
-        public SqlCommand comandosql;
-        public SqlDataReader dr;
+        public string mensaje;
+        public SqlConnection cnx;
+        public SqlCommand cmd;
+        public SqlDataAdapter DataAdapter;
         public DataTable dt;
-        public SqlDataAdapter da;
+        public DataRow Dr;
+        public SqlDataReader DtR;
+        public DataSet Dataset;
+        public DataView DataView;
 
         public Conexion()
         {
-            this.cnn = new SqlConnection(@"Data Source=DESKTOP-4UE71IO\SQLEXPRESS;Initial Catalog=; integrated security=true;");
+
+            try
+            {
+                this.cnx = new SqlConnection(@"Data Source=DESKTOP-4UE71IO\SQLEXPRESS;Initial Catalog=ALBATROS; integrated security=true;");
+            }
+            catch (Exception)
+            {
+
+            }
         }
 
         public void Abrir()
         {
             try
             {
-                cnn.Open();
+                cnx.Open();
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                Console.WriteLine("Error de Conexion +", ex.Message);
+                MessageBox.Show("Error");
             }
-        }
-
-        public void Cerrar()
-        {
-            cnn.Close();
         }
 
     }
