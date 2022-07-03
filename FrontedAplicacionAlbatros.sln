@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModuloClientes", "ModuloCli
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModuloProductos", "ModuloProductos\ModuloProductos.csproj", "{3D912F83-BEFE-415B-B281-9AE94548A882}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModuloFacturas", "ModuloFacturas\ModuloFacturas.csproj", "{5C928C2F-27E0-415A-9FBB-F607A3511905}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{3D912F83-BEFE-415B-B281-9AE94548A882}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3D912F83-BEFE-415B-B281-9AE94548A882}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3D912F83-BEFE-415B-B281-9AE94548A882}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C928C2F-27E0-415A-9FBB-F607A3511905}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C928C2F-27E0-415A-9FBB-F607A3511905}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C928C2F-27E0-415A-9FBB-F607A3511905}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C928C2F-27E0-415A-9FBB-F607A3511905}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

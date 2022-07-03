@@ -49,7 +49,22 @@ namespace FrontedAplicacionAlbatros.Modulo_Cliente
             DataGridViewRow dataGridViewRow = dataGridClientesListado.Rows[e.RowIndex];
             modClientes.idCliente = Convert.ToString(dataGridViewRow.Cells["ID_CLIENTE"].Value.ToString());
             modClientes.nombreCliente = Convert.ToString(dataGridViewRow.Cells["NOMBRE"].Value.ToString());
+            modClientes.RTN = Convert.ToString(dataGridViewRow.Cells["RTN"].Value.ToString());
+            modClientes.DireccionCli = Convert.ToString(dataGridViewRow.Cells["Direccion"].Value.ToString());
+            modClientes.Fecha_Creacion = Convert.ToString(dataGridViewRow.Cells["Fecha_Creacion"].Value.ToString());
+            modClientes.Fecha_Modificacion = Convert.ToString(dataGridViewRow.Cells["Fecha_Modificacion"].Value.ToString());
+            modClientes.datasg = dataGridClientesListado;
             modClientes.ShowDialog();
+        }
+
+        private void buttonGuardarClientes_Click(object sender, EventArgs e)
+        {
+            Clientes clientes = new Clientes();
+
+            clientes.CrearCliente(textBox2.Text, textBox3.Text, textBox4.Text);
+            clientes.CargarDataGriewClientes(dataGridClientesListado);
+
+
         }
     }
 }

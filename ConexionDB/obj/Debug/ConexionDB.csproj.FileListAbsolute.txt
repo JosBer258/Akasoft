@@ -4,3 +4,9 @@ C:\Users\dell\Videos\Arkasoft\Akasoft\ConexionDB\obj\Debug\ConexionDB.csproj.Ass
 C:\Users\dell\Videos\Arkasoft\Akasoft\ConexionDB\obj\Debug\ConexionDB.csproj.CoreCompileInputs.cache
 C:\Users\dell\Videos\Arkasoft\Akasoft\ConexionDB\obj\Debug\ConexionDB.dll
 C:\Users\dell\Videos\Arkasoft\Akasoft\ConexionDB\obj\Debug\ConexionDB.pdb
+C:\Users\rob20\Source\Repos\Akasoft\ConexionDB\bin\Debug\ConexionDB.dll
+C:\Users\rob20\Source\Repos\Akasoft\ConexionDB\bin\Debug\ConexionDB.pdb
+C:\Users\rob20\Source\Repos\Akasoft\ConexionDB\obj\Debug\ConexionDB.csproj.AssemblyReference.cache
+C:\Users\rob20\Source\Repos\Akasoft\ConexionDB\obj\Debug\ConexionDB.csproj.CoreCompileInputs.cache
+C:\Users\rob20\Source\Repos\Akasoft\ConexionDB\obj\Debug\ConexionDB.dll
+C:\Users\rob20\Source\Repos\Akasoft\ConexionDB\obj\Debug\ConexionDB.pdb

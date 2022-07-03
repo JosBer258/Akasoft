@@ -31,7 +31,7 @@ namespace ConexionDB
             try
             {
 
-                this.ccnx = @"Data Source=DESKTOP-4UE71IO\SQLEXPRESS;Initial Catalog=ALBATROS;integrated security=true;";
+                this.ccnx = @"Data Source=LAPTOP-QCCHCKRB;Initial Catalog=ALBATROS;integrated security=true;";
                 this.cnx = new SqlConnection(this.ccnx);
             }
             catch (Exception e)

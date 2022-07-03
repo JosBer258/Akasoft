@@ -55,19 +55,21 @@
             this.tabControlClientes.Controls.Add(this.tabCreacion);
             this.tabControlClientes.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControlClientes.Location = new System.Drawing.Point(0, 0);
+            this.tabControlClientes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabControlClientes.Name = "tabControlClientes";
             this.tabControlClientes.SelectedIndex = 0;
-            this.tabControlClientes.Size = new System.Drawing.Size(800, 432);
+            this.tabControlClientes.Size = new System.Drawing.Size(1067, 532);
             this.tabControlClientes.TabIndex = 0;
             // 
             // tabBusqueda
             // 
             this.tabBusqueda.Controls.Add(this.label1);
             this.tabBusqueda.Controls.Add(this.dataGridClientesListado);
-            this.tabBusqueda.Location = new System.Drawing.Point(4, 22);
+            this.tabBusqueda.Location = new System.Drawing.Point(4, 25);
+            this.tabBusqueda.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabBusqueda.Name = "tabBusqueda";
-            this.tabBusqueda.Padding = new System.Windows.Forms.Padding(3);
-            this.tabBusqueda.Size = new System.Drawing.Size(792, 406);
+            this.tabBusqueda.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabBusqueda.Size = new System.Drawing.Size(1059, 503);
             this.tabBusqueda.TabIndex = 0;
             this.tabBusqueda.Text = "Busqueda de Clientes";
             this.tabBusqueda.UseVisualStyleBackColor = true;
@@ -76,9 +78,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.label1.Location = new System.Drawing.Point(462, 19);
+            this.label1.Location = new System.Drawing.Point(616, 23);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(322, 13);
+            this.label1.Size = new System.Drawing.Size(406, 16);
             this.label1.TabIndex = 4;
             this.label1.Text = "*Doble Click en datos del Cliente para observar detalles / Modificar";
             // 
@@ -91,10 +94,12 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridClientesListado.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridClientesListado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridClientesListado.Location = new System.Drawing.Point(8, 49);
+            this.dataGridClientesListado.Location = new System.Drawing.Point(11, 60);
+            this.dataGridClientesListado.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridClientesListado.Name = "dataGridClientesListado";
             this.dataGridClientesListado.ReadOnly = true;
-            this.dataGridClientesListado.Size = new System.Drawing.Size(776, 349);
+            this.dataGridClientesListado.RowHeadersWidth = 51;
+            this.dataGridClientesListado.Size = new System.Drawing.Size(1035, 430);
             this.dataGridClientesListado.TabIndex = 0;
             this.dataGridClientesListado.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridClientesListado_CellContentDoubleClick);
             this.dataGridClientesListado.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridClientesListado_CellDoubleClick);
@@ -112,71 +117,80 @@
             this.tabCreacion.Controls.Add(this.labelDireccion);
             this.tabCreacion.Controls.Add(this.label3);
             this.tabCreacion.Controls.Add(this.labelRTN);
-            this.tabCreacion.Location = new System.Drawing.Point(4, 22);
+            this.tabCreacion.Location = new System.Drawing.Point(4, 25);
+            this.tabCreacion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabCreacion.Name = "tabCreacion";
-            this.tabCreacion.Padding = new System.Windows.Forms.Padding(3);
-            this.tabCreacion.Size = new System.Drawing.Size(792, 406);
+            this.tabCreacion.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabCreacion.Size = new System.Drawing.Size(1059, 503);
             this.tabCreacion.TabIndex = 1;
             this.tabCreacion.Text = "Creacion de Clientes";
             // 
             // buttonCancelar
             // 
-            this.buttonCancelar.Location = new System.Drawing.Point(173, 341);
+            this.buttonCancelar.Location = new System.Drawing.Point(231, 420);
+            this.buttonCancelar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonCancelar.Name = "buttonCancelar";
-            this.buttonCancelar.Size = new System.Drawing.Size(215, 47);
+            this.buttonCancelar.Size = new System.Drawing.Size(287, 58);
             this.buttonCancelar.TabIndex = 10;
             this.buttonCancelar.Text = "Cancelar";
             this.buttonCancelar.UseVisualStyleBackColor = true;
             // 
             // buttonGuardarClientes
             // 
-            this.buttonGuardarClientes.Location = new System.Drawing.Point(173, 288);
+            this.buttonGuardarClientes.Location = new System.Drawing.Point(231, 354);
+            this.buttonGuardarClientes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonGuardarClientes.Name = "buttonGuardarClientes";
-            this.buttonGuardarClientes.Size = new System.Drawing.Size(215, 47);
+            this.buttonGuardarClientes.Size = new System.Drawing.Size(287, 58);
             this.buttonGuardarClientes.TabIndex = 9;
             this.buttonGuardarClientes.Text = "Guardar Datos";
             this.buttonGuardarClientes.UseVisualStyleBackColor = true;
+            this.buttonGuardarClientes.Click += new System.EventHandler(this.buttonGuardarClientes_Click);
             // 
             // textBox4
             // 
             this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(173, 126);
+            this.textBox4.Location = new System.Drawing.Point(231, 155);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox4.Multiline = true;
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(215, 156);
+            this.textBox4.Size = new System.Drawing.Size(285, 191);
             this.textBox4.TabIndex = 8;
             // 
             // textBox3
             // 
             this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(173, 95);
+            this.textBox3.Location = new System.Drawing.Point(231, 117);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(215, 22);
+            this.textBox3.Size = new System.Drawing.Size(285, 26);
             this.textBox3.TabIndex = 7;
             // 
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(173, 61);
+            this.textBox2.Location = new System.Drawing.Point(231, 75);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(215, 22);
+            this.textBox2.Size = new System.Drawing.Size(285, 26);
             this.textBox2.TabIndex = 6;
             // 
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(173, 27);
+            this.textBox1.Location = new System.Drawing.Point(231, 33);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(215, 22);
+            this.textBox1.Size = new System.Drawing.Size(285, 26);
             this.textBox1.TabIndex = 5;
             // 
             // lableIdCliente
             // 
             this.lableIdCliente.AutoSize = true;
             this.lableIdCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lableIdCliente.Location = new System.Drawing.Point(23, 30);
+            this.lableIdCliente.Location = new System.Drawing.Point(31, 37);
+            this.lableIdCliente.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lableIdCliente.Name = "lableIdCliente";
-            this.lableIdCliente.Size = new System.Drawing.Size(64, 16);
+            this.lableIdCliente.Size = new System.Drawing.Size(83, 20);
             this.lableIdCliente.TabIndex = 4;
             this.lableIdCliente.Text = "ID Cliente";
             // 
@@ -184,9 +198,10 @@
             // 
             this.labelDireccion.AutoSize = true;
             this.labelDireccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelDireccion.Location = new System.Drawing.Point(23, 126);
+            this.labelDireccion.Location = new System.Drawing.Point(31, 155);
+            this.labelDireccion.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelDireccion.Name = "labelDireccion";
-            this.labelDireccion.Size = new System.Drawing.Size(64, 16);
+            this.labelDireccion.Size = new System.Drawing.Size(81, 20);
             this.labelDireccion.TabIndex = 3;
             this.labelDireccion.Text = "Direccion";
             // 
@@ -194,9 +209,10 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(23, 64);
+            this.label3.Location = new System.Drawing.Point(31, 79);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(100, 16);
+            this.label3.Size = new System.Drawing.Size(125, 20);
             this.label3.TabIndex = 2;
             this.label3.Text = "Nombre Cliente";
             // 
@@ -204,18 +220,20 @@
             // 
             this.labelRTN.AutoSize = true;
             this.labelRTN.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelRTN.Location = new System.Drawing.Point(23, 96);
+            this.labelRTN.Location = new System.Drawing.Point(31, 118);
+            this.labelRTN.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelRTN.Name = "labelRTN";
-            this.labelRTN.Size = new System.Drawing.Size(36, 16);
+            this.labelRTN.Size = new System.Drawing.Size(43, 20);
             this.labelRTN.TabIndex = 1;
             this.labelRTN.Text = "RTN";
             // 
             // ClientesGeneral
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 432);
+            this.ClientSize = new System.Drawing.Size(1067, 532);
             this.Controls.Add(this.tabControlClientes);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "ClientesGeneral";
             this.Text = "Gestion de Clientes";
             this.Load += new System.EventHandler(this.ClientesGeneral_Load);
