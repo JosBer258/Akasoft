@@ -270,10 +270,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridItemsListado.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridItemsListado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridItemsListado.Location = new System.Drawing.Point(15, 224);
+            this.dataGridItemsListado.Location = new System.Drawing.Point(15, 184);
             this.dataGridItemsListado.Name = "dataGridItemsListado";
             this.dataGridItemsListado.ReadOnly = true;
-            this.dataGridItemsListado.Size = new System.Drawing.Size(983, 208);
+            this.dataGridItemsListado.Size = new System.Drawing.Size(983, 248);
             this.dataGridItemsListado.TabIndex = 1;
             // 
             // textBox5
