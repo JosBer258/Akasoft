@@ -21,7 +21,7 @@ namespace ModuloClientes
         private string rtnCliente;
         private string direccionCliente;
         private DateTime fechaCreacion;
-        private DateTime fechaModificacion;
+        private DateTime? fechaModificacion;
         
 
 
@@ -39,7 +39,7 @@ namespace ModuloClientes
 
         public DateTime FechaCreacion { get { return fechaCreacion; } set { fechaCreacion = DateTime.Now; } } 
 
-        public DateTime FechaModificacion { get { return fechaModificacion; } set { fechaModificacion = DateTime.Now;  } }
+        public DateTime? FechaModificacion { get { return fechaModificacion; } set { fechaModificacion = DateTime.Now;  } }
 
 
         public void CargarDataGriewClientes(DataGridView dvg)
@@ -77,9 +77,17 @@ namespace ModuloClientes
         }
 
 
-        public void IngresoClientes()
+        public void IngresoClientes(Clientes clientes)
         {
+            string Impuesto =
+            sql = string.Format(@""
+            );
 
+            cmd = new SqlCommand(sql, cnx);
+            cnx.Open();
+            SqlDataReader Reg = null;
+            Reg = this.cmd.ExecuteReader();
+            cnx.Close();
         }
     }
 }
