@@ -47,7 +47,7 @@ namespace ModuloClientes
             cnx.Open();
             try
             {
-                DataAdapter = new SqlDataAdapter(@"SELECT * FROM CLIENTES", ccnx);
+                DataAdapter = new SqlDataAdapter(@"select * from [dbo].[CLIENTES]  where STATUS = 'A'", ccnx);
                 dt = new DataTable();
                 DataAdapter.Fill(dt);
                 dvg.DataSource = dt;
@@ -64,7 +64,7 @@ namespace ModuloClientes
         public void CargarClientes(ComboBox comboBoxClientes)
         {
             cnx.Open();
-            sql = string.Format(@"SELECT * FROM CLIENTES");
+            sql = string.Format(@"select * from [dbo].[CLIENTES]  where STATUS = 'A'");
             cmd = new SqlCommand(sql, cnx);
             DataAdapter = new SqlDataAdapter(cmd);
             dt = new DataTable();
@@ -77,6 +77,9 @@ namespace ModuloClientes
         }
 
 
+        public void IngresoClientes()
+        {
 
+        }
     }
 }
