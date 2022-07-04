@@ -27,6 +27,7 @@ namespace FrontedAplicacionAlbatros.Modulo_Cliente
         private void ClientesGeneral_Load(object sender, EventArgs e)
         {
             Clientes clientes = new Clientes();
+            textBox1.Enabled=false;
             clientes.CargarDataGriewClientes(dataGridClientesListado);
         }
 
@@ -65,6 +66,11 @@ namespace FrontedAplicacionAlbatros.Modulo_Cliente
             clientes.CargarDataGriewClientes(dataGridClientesListado);
 
 
+        }
+
+        private void buttonCancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
