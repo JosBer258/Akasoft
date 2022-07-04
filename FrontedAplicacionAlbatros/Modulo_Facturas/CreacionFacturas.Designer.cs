@@ -29,7 +29,9 @@
         private void InitializeComponent()
         {
             this.groupDatosGenerales = new System.Windows.Forms.GroupBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.textIdFacturas = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.comboBoxClientes = new System.Windows.Forms.ComboBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
             this.labelIDCliente = new System.Windows.Forms.Label();
@@ -56,8 +58,13 @@
             this.label3 = new System.Windows.Forms.Label();
             this.dataGridItemsListado = new System.Windows.Forms.DataGridView();
             this.buttonCrearNuevaFactura = new System.Windows.Forms.Button();
-            this.textIdFacturas = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
+            this.ColumnIDProducto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnDescripcionProd = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnPrecio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnCantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnTotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnImp = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnTotalDp = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupDatosGenerales.SuspendLayout();
             this.groupResumen.SuspendLayout();
             this.groupDetalles.SuspendLayout();
@@ -69,7 +76,7 @@
             // 
             this.groupDatosGenerales.Controls.Add(this.textIdFacturas);
             this.groupDatosGenerales.Controls.Add(this.label8);
-            this.groupDatosGenerales.Controls.Add(this.comboBox1);
+            this.groupDatosGenerales.Controls.Add(this.comboBoxClientes);
             this.groupDatosGenerales.Controls.Add(this.dateTimePicker1);
             this.groupDatosGenerales.Controls.Add(this.label1);
             this.groupDatosGenerales.Controls.Add(this.labelIDCliente);
@@ -80,14 +87,30 @@
             this.groupDatosGenerales.TabStop = false;
             this.groupDatosGenerales.Text = "Header";
             // 
-            // comboBox1
+            // textIdFacturas
             // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(327, 26);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(200, 21);
-            this.comboBox1.TabIndex = 12;
+            this.textIdFacturas.Location = new System.Drawing.Point(25, 54);
+            this.textIdFacturas.Name = "textIdFacturas";
+            this.textIdFacturas.Size = new System.Drawing.Size(125, 20);
+            this.textIdFacturas.TabIndex = 17;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(22, 31);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(57, 13);
+            this.label8.TabIndex = 16;
+            this.label8.Text = "ID Factura";
+            // 
+            // comboBoxClientes
+            // 
+            this.comboBoxClientes.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxClientes.FormattingEnabled = true;
+            this.comboBoxClientes.Location = new System.Drawing.Point(327, 26);
+            this.comboBoxClientes.Name = "comboBoxClientes";
+            this.comboBoxClientes.Size = new System.Drawing.Size(200, 21);
+            this.comboBoxClientes.TabIndex = 12;
             // 
             // dateTimePicker1
             // 
@@ -328,6 +351,14 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridItemsListado.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridItemsListado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridItemsListado.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ColumnIDProducto,
+            this.ColumnDescripcionProd,
+            this.ColumnPrecio,
+            this.ColumnCantidad,
+            this.ColumnTotal,
+            this.ColumnImp,
+            this.ColumnTotalDp});
             this.dataGridItemsListado.Location = new System.Drawing.Point(15, 184);
             this.dataGridItemsListado.Name = "dataGridItemsListado";
             this.dataGridItemsListado.ReadOnly = true;
@@ -343,21 +374,47 @@
             this.buttonCrearNuevaFactura.Text = "Crear Nueva Factura";
             this.buttonCrearNuevaFactura.UseVisualStyleBackColor = true;
             // 
-            // textIdFacturas
+            // ColumnIDProducto
             // 
-            this.textIdFacturas.Location = new System.Drawing.Point(25, 54);
-            this.textIdFacturas.Name = "textIdFacturas";
-            this.textIdFacturas.Size = new System.Drawing.Size(125, 20);
-            this.textIdFacturas.TabIndex = 17;
+            this.ColumnIDProducto.HeaderText = "ID Producto";
+            this.ColumnIDProducto.Name = "ColumnIDProducto";
+            this.ColumnIDProducto.ReadOnly = true;
             // 
-            // label8
+            // ColumnDescripcionProd
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(22, 31);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(57, 13);
-            this.label8.TabIndex = 16;
-            this.label8.Text = "ID Factura";
+            this.ColumnDescripcionProd.HeaderText = "Producto";
+            this.ColumnDescripcionProd.Name = "ColumnDescripcionProd";
+            this.ColumnDescripcionProd.ReadOnly = true;
+            // 
+            // ColumnPrecio
+            // 
+            this.ColumnPrecio.HeaderText = "Precio Unitario";
+            this.ColumnPrecio.Name = "ColumnPrecio";
+            this.ColumnPrecio.ReadOnly = true;
+            // 
+            // ColumnCantidad
+            // 
+            this.ColumnCantidad.HeaderText = "Cantidad";
+            this.ColumnCantidad.Name = "ColumnCantidad";
+            this.ColumnCantidad.ReadOnly = true;
+            // 
+            // ColumnTotal
+            // 
+            this.ColumnTotal.HeaderText = "Total Antes Impuesto";
+            this.ColumnTotal.Name = "ColumnTotal";
+            this.ColumnTotal.ReadOnly = true;
+            // 
+            // ColumnImp
+            // 
+            this.ColumnImp.HeaderText = "Impuesto %";
+            this.ColumnImp.Name = "ColumnImp";
+            this.ColumnImp.ReadOnly = true;
+            // 
+            // ColumnTotalDp
+            // 
+            this.ColumnTotalDp.HeaderText = "Total despues Impuesto";
+            this.ColumnTotalDp.Name = "ColumnTotalDp";
+            this.ColumnTotalDp.ReadOnly = true;
             // 
             // CreacionFacturas
             // 
@@ -391,7 +448,7 @@
         private System.Windows.Forms.GroupBox groupResumen;
         private System.Windows.Forms.GroupBox groupDetalles;
         private System.Windows.Forms.Label labelIDCliente;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboBoxClientes;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textTotalFactura;
@@ -417,5 +474,12 @@
         private System.Windows.Forms.Button buttonCrearNuevaFactura;
         private System.Windows.Forms.TextBox textIdFacturas;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnIDProducto;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnDescripcionProd;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnPrecio;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnCantidad;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnTotal;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnImp;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnTotalDp;
     }
 }

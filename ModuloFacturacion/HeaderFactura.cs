@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using ConexionDB;
 
 namespace ModuloFacturacion
@@ -29,6 +31,8 @@ namespace ModuloFacturacion
         public DateTime FechaCreacion { get { return fechaCreacion; } set { fechaCreacion = DateTime.Now; } }
 
         public DateTime? FechaAnulacion { get { return fechaAnulacion; } set { fechaAnulacion = DateTime.Now; } }
+
+
 
 
         public void CreacionHeader()
@@ -74,6 +78,25 @@ namespace ModuloFacturacion
 
             this.cnx.Close();
             return (idFactura);
+        }
+
+        public void CargarDataGriewHeader(DataGridView dvg)
+        {
+            cnx.Open();
+            try
+            {
+                DataAdapter = new SqlDataAdapter(@"select * from [dbo].[FACTURA_HEADER];", ccnx);
+                dt = new DataTable();
+                DataAdapter.Fill(dt);
+                dvg.DataSource = dt;
+
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.ToString());
+            }
+            cnx.Close();
+
         }
     }
 }

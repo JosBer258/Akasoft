@@ -79,6 +79,7 @@
             this.Name = "BusquedaFacturas";
             this.Text = "Busqueda de Facturas";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.BusquedaFacturas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridClientesListado)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
