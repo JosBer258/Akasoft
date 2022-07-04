@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ModuloFacturacion;
+using ModuloClientes;
 
 namespace FrontedAplicacionAlbatros.Modulo_Facturas
 {
@@ -17,5 +19,15 @@ namespace FrontedAplicacionAlbatros.Modulo_Facturas
             InitializeComponent();
         }
 
+        private void CreacionFacturas_Load(object sender, EventArgs e)
+        {
+            HeaderFactura headerFactura = new HeaderFactura();
+            headerFactura.CreacionHeader();
+
+            textIdFacturas.Text = headerFactura.CargarUltimaFactura();
+
+            Clientes clientes = new Clientes();
+            clientes.CargarClientes(comboBoxClientes);
+        }
     }
 }

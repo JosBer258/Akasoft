@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\ModuloClientes",
+    "\\ModuloFacturacion"
   ],
-  "SelectedNode": "\\FrontedAplicacionAlbatros.sln",
+  "SelectedNode": "\\ModuloClientes\\Clientes.cs",
   "PreviewInSolutionExplorer": false
 }

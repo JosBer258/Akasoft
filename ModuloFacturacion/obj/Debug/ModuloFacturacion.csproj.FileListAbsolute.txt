@@ -1,0 +1,9 @@
+C:\Users\dell\Videos\Arkasoft\Akasoft\ModuloFacturacion\bin\Debug\ModuloFacturacion.dll
+C:\Users\dell\Videos\Arkasoft\Akasoft\ModuloFacturacion\bin\Debug\ModuloFacturacion.pdb
+C:\Users\dell\Videos\Arkasoft\Akasoft\ModuloFacturacion\bin\Debug\ConexionDB.dll
+C:\Users\dell\Videos\Arkasoft\Akasoft\ModuloFacturacion\bin\Debug\ConexionDB.pdb
+C:\Users\dell\Videos\Arkasoft\Akasoft\ModuloFacturacion\obj\Debug\ModuloFacturacion.csproj.AssemblyReference.cache
+C:\Users\dell\Videos\Arkasoft\Akasoft\ModuloFacturacion\obj\Debug\ModuloFacturacion.csproj.CoreCompileInputs.cache
+C:\Users\dell\Videos\Arkasoft\Akasoft\ModuloFacturacion\obj\Debug\ModuloFacturacion.csproj.CopyComplete
+C:\Users\dell\Videos\Arkasoft\Akasoft\ModuloFacturacion\obj\Debug\ModuloFacturacion.dll
+C:\Users\dell\Videos\Arkasoft\Akasoft\ModuloFacturacion\obj\Debug\ModuloFacturacion.pdb

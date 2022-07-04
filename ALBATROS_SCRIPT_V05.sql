@@ -1,6 +1,6 @@
 USE [master]
 GO
-/****** Object:  Database [ALBATROS]    Script Date: 7/3/2022 5:20:31 PM ******/
+/****** Object:  Database [ALBATROS]    Script Date: 7/3/2022 6:02:38 PM ******/
 CREATE DATABASE [ALBATROS]
  CONTAINMENT = NONE
  ON  PRIMARY 
@@ -82,7 +82,7 @@ ALTER DATABASE [ALBATROS] SET QUERY_STORE = OFF
 GO
 USE [ALBATROS]
 GO
-/****** Object:  Table [dbo].[CLIENTES]    Script Date: 7/3/2022 5:20:31 PM ******/
+/****** Object:  Table [dbo].[CLIENTES]    Script Date: 7/3/2022 6:02:38 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -97,21 +97,7 @@ CREATE TABLE [dbo].[CLIENTES](
 	[STATUS] [char](1) NULL
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[FACTURA_DETAIL]    Script Date: 7/3/2022 5:20:31 PM ******/
-SET ANSI_NULLS ON
-GO
-SET QUOTED_IDENTIFIER ON
-GO
-CREATE TABLE [dbo].[FACTURA_DETAIL](
-	[ID_FACTURA] [numeric](18, 0) NULL,
-	[CODIGO_PRODUCTO] [numeric](18, 0) NULL,
-	[CANTIDAD] [numeric](18, 0) NULL,
-	[PRECIO] [numeric](14, 2) NULL,
-	[TOTAL_PRODUCTO] [numeric](14, 2) NULL,
-	[FECHA_CREACION]  AS (getdate())
-) ON [PRIMARY]
-GO
-/****** Object:  Table [dbo].[FACTURA_HEADER]    Script Date: 7/3/2022 5:20:31 PM ******/
+/****** Object:  Table [dbo].[FACTURA_HEADER]    Script Date: 7/3/2022 6:02:38 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -125,7 +111,39 @@ CREATE TABLE [dbo].[FACTURA_HEADER](
 	[FECHA_ANULACION] [date] NULL
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[IMPUESTO]    Script Date: 7/3/2022 5:20:31 PM ******/
+/****** Object:  View [dbo].[RP_Factura_resumen]    Script Date: 7/3/2022 6:02:38 PM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+
+CREATE VIEW [dbo].[RP_Factura_resumen]
+AS
+select b.NOMBRE CLIENTE, b.RTN AS RTN
+				, A.ID_FACTURA as NUMERO_FACTURA
+			 , A.TOTAL_FACTURA AS TOTAL
+			, A.TOTAL_IMPUESTO AS IMPUESTO , A.FECHA_CREACION as FECHA_EMISION   
+from [ALBATROS].DBO.[FACTURA_HEADER] A 
+inner join ALBATROS.DBO.CLIENTES B on A.ID_CLIENTE=B.ID_CLIENTE and b.status='A'
+
+GO
+/****** Object:  Table [dbo].[FACTURA_DETAIL]    Script Date: 7/3/2022 6:02:38 PM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[FACTURA_DETAIL](
+	[ID_FACTURA] [numeric](18, 0) NULL,
+	[CODIGO_PRODUCTO] [numeric](18, 0) NULL,
+	[CANTIDAD] [numeric](18, 0) NULL,
+	[PRECIO] [numeric](14, 2) NULL,
+	[TOTAL_PRODUCTO] [numeric](14, 2) NULL,
+	[FECHA_CREACION]  AS (getdate())
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[IMPUESTO]    Script Date: 7/3/2022 6:02:38 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -136,7 +154,7 @@ CREATE TABLE [dbo].[IMPUESTO](
 	[impuesto] [numeric](14, 2) NULL
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[PRODUCTO]    Script Date: 7/3/2022 5:20:31 PM ******/
+/****** Object:  Table [dbo].[PRODUCTO]    Script Date: 7/3/2022 6:02:38 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -151,7 +169,7 @@ CREATE TABLE [dbo].[PRODUCTO](
 	[status] [char](1) NULL
 ) ON [PRIMARY]
 GO
-/****** Object:  StoredProcedure [dbo].[ALBATROS_CLIENTE_DELETE]    Script Date: 7/3/2022 5:20:31 PM ******/
+/****** Object:  StoredProcedure [dbo].[ALBATROS_CLIENTE_DELETE]    Script Date: 7/3/2022 6:02:38 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -193,7 +211,7 @@ END
 
 
 GO
-/****** Object:  StoredProcedure [dbo].[ALBATROS_CLIENTE_UPDATE]    Script Date: 7/3/2022 5:20:31 PM ******/
+/****** Object:  StoredProcedure [dbo].[ALBATROS_CLIENTE_UPDATE]    Script Date: 7/3/2022 6:02:38 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -240,7 +258,7 @@ END
 
 
 GO
-/****** Object:  StoredProcedure [dbo].[ALBATROS_CLIENTES]    Script Date: 7/3/2022 5:20:31 PM ******/
+/****** Object:  StoredProcedure [dbo].[ALBATROS_CLIENTES]    Script Date: 7/3/2022 6:02:38 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -277,7 +295,7 @@ INSERT INTO ALBATROS.[dbo].[CLIENTES]
 		--SELECT @MENSAJE='El Cliente ha sido ingresado con Exito :)'
 END 
 GO
-/****** Object:  StoredProcedure [dbo].[ALBATROS_FACTURA_DETAIL]    Script Date: 7/3/2022 5:20:31 PM ******/
+/****** Object:  StoredProcedure [dbo].[ALBATROS_FACTURA_DETAIL]    Script Date: 7/3/2022 6:02:38 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -323,7 +341,7 @@ DECLARE @IDFACTURA INT = (SELECT MAX(ID_FACTURA)FROM Albatros.[dbo].[FACTURA_HEA
 
 
 GO
-/****** Object:  StoredProcedure [dbo].[ALBATROS_FACTURA_HEADER_UPDATE]    Script Date: 7/3/2022 5:20:31 PM ******/
+/****** Object:  StoredProcedure [dbo].[ALBATROS_FACTURA_HEADER_UPDATE]    Script Date: 7/3/2022 6:02:38 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -365,7 +383,7 @@ DECLARE @IDFACTURA INT = (SELECT MAX(ID_FACTURA)FROM Albatros.[dbo].[FACTURA_HEA
 
 
 GO
-/****** Object:  StoredProcedure [dbo].[ALBATROS_FACTURACION_HEADER]    Script Date: 7/3/2022 5:20:31 PM ******/
+/****** Object:  StoredProcedure [dbo].[ALBATROS_FACTURACION_HEADER]    Script Date: 7/3/2022 6:02:38 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -399,7 +417,7 @@ SELECT 	NULL,NULL,NULL,NULL
 
 
 GO
-/****** Object:  StoredProcedure [dbo].[ALBATROS_PRODUCTOS]    Script Date: 7/3/2022 5:20:31 PM ******/
+/****** Object:  StoredProcedure [dbo].[ALBATROS_PRODUCTOS]    Script Date: 7/3/2022 6:02:38 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -449,7 +467,7 @@ END
 
 
 GO
-/****** Object:  StoredProcedure [dbo].[ALBATROS_PRODUCTOS_DELETE]    Script Date: 7/3/2022 5:20:31 PM ******/
+/****** Object:  StoredProcedure [dbo].[ALBATROS_PRODUCTOS_DELETE]    Script Date: 7/3/2022 6:02:38 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -493,7 +511,7 @@ END
 
 
 GO
-/****** Object:  StoredProcedure [dbo].[ALBATROS_PRODUCTOS_UPDATE]    Script Date: 7/3/2022 5:20:31 PM ******/
+/****** Object:  StoredProcedure [dbo].[ALBATROS_PRODUCTOS_UPDATE]    Script Date: 7/3/2022 6:02:38 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON

@@ -160,9 +160,9 @@
       <Project>{33c7e96d-c031-4d76-91c4-5246e1f166c1}</Project>
       <Name>ModuloClientes</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ModuloFacturas\ModuloFacturas.csproj">
-      <Project>{5c928c2f-27e0-415a-9fbb-f607a3511905}</Project>
-      <Name>ModuloFacturas</Name>
+    <ProjectReference Include="..\ModuloFacturacion\ModuloFacturacion.csproj">
+      <Project>{cd64a5dd-3431-48a0-a7dd-d1fe46c5eb8e}</Project>
+      <Name>ModuloFacturacion</Name>
     </ProjectReference>
     <ProjectReference Include="..\ModuloProductos\ModuloProductos.csproj">
       <Project>{3d912f83-befe-415b-b281-9ae94548a882}</Project>
